@@ -1,2 +1,3 @@
+# Ignore word documents and rich text files
 *.docx
 *.rtf
