@@ -1,4 +1,6 @@
 # Unit 4 Lab 1 - Senario 2 "The Overzealous Library"
+# Group members: Nicholas Balsom, Timny Li, Paul Crocker
+# Nick made this one
 
 
 class NotEnoughBooksError(Exception):
@@ -15,6 +17,8 @@ def checkout_books(n):
 def main():
     try:
         checkout_books(int(input("How many books are you checking out: ")))
+    except ValueError:
+        print("NO, NO, Enter an Integer")
     except NotEnoughBooksError as e:
         print("NotEnoughBooksError:", e)
 

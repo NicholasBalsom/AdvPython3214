@@ -6,6 +6,10 @@
 # coffee, after all.
 
 
+# Group members: Nicholas Balsom, Timny Li, Paul Crocker
+# Timny made this one
+
+
 # Creates a custum exception
 class NotEnoughCaffeieneError(Exception):
     pass
@@ -18,13 +22,13 @@ def get_coffee(n):
         raise NotEnoughCaffeieneError("NOT ENOUGH CAFFEIENE!")
     else:
         # prints if cups are greater than 2
-        print("GREAT SUCCESS")
+        print("GREAT SUCCESS!")
 
 
 def main():
     # try and except to catch the custom exception and prints its
     try:
-        get_coffee(int(input("Enter number: ")))
+        get_coffee(int(input("Enter how many cups of coffee u want: ")))
     except NotEnoughCaffeieneError as e:
         print(f"Custom exception: {e}")
 
