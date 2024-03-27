@@ -5,3 +5,6 @@
 /__pycache__
 
 .venv
+
+*.zip
+*.7z
