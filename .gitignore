@@ -1,0 +1,10 @@
+# Ignore word documents and rich text files
+*.docx
+*.rtf
+
+__pycache__/
+
+.venv
+
+*.zip
+*.7z
